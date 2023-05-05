@@ -7,26 +7,28 @@ const NewsContent = () => {
     const {newsData, setNewsData} = useContext(NewsData)
 
   return (
-    <Flex mt='10px'>
-        <Spacer />
-        <Box w='1200px'>
-            <Wrap>
-                {
-                    newsData && newsData.map((news, key) => {
-                        return (
-                            <>
-                                <WrapItem>
-                                    <SingleNewsItem key={news.id} news={news}/>
-                                </WrapItem>
-                            </>
-                        )
-                    })
-                
-                }
-            </Wrap> 
-        </Box>
-        <Spacer />
-    </Flex>
+    <>
+        <Flex mt='10px'>
+            <Spacer />
+            <Box w='1200px'>
+                <Wrap>
+                    {
+                        newsData && newsData.map((news, key) => {
+                            return (
+                                <>
+                                    <WrapItem>
+                                        <SingleNewsItem key={news.id} news={news}/>
+                                    </WrapItem>
+                                </>
+                            )
+                        })
+                    
+                    }
+                </Wrap> 
+            </Box>
+            <Spacer />
+        </Flex>
+    </>
   )
 }
 

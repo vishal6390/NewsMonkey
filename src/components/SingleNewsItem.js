@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Image, Button,Box,  Text, Stack, Flex, Divider, CardFooter, ButtonGroup, Card, CardBody, Spacer, Link } from '@chakra-ui/react'
+import { Heading, Image, Button,Box,  Text, Stack, Flex, Divider, CardFooter, Card, CardBody, Spacer, Link } from '@chakra-ui/react'
 
 
 const SingleNewsItem = ({news}) => {
