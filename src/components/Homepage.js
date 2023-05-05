@@ -21,7 +21,7 @@ export const Homepage = () => {
     }, [])
 
   return (
-    <Box>
+    <Box bgColor='gray.200'>
         <Navbar />
         <NewsContent />
     </Box>
