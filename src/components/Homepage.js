@@ -1,5 +1,4 @@
-// import { Box, Flex, Image, Spacer, InputGroup, Input, InputRightElement, Button, Text } from '@chakra-ui/react'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Navbar } from './Navbar'
 import NewsContent from './NewsContent'
 import { NewsData } from '../context/NewsDataContext'
@@ -18,15 +17,15 @@ export const Homepage = () => {
             setNewsData(parsedData.articles)
         }
         getNewsData()
+        // eslint-disable-next-line
     }, [])
 
   return (
     <Box bgColor='gray.200'>
-        <Navbar />
+        <Navbar/>
         {
           newsData ? <NewsContent /> : < LoadingScreen/>
         }
-
     </Box>
   )
 }

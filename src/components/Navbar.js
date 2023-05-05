@@ -58,6 +58,7 @@ export const Navbar = () => {
             setNewsData(parsedData.articles)
             setSearchLoading(false)
 
+
         }
 
     }

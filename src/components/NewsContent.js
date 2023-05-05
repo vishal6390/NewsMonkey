@@ -4,7 +4,7 @@ import { NewsData } from '../context/NewsDataContext'
 import SingleNewsItem from './SingleNewsItem'
 
 const NewsContent = () => {
-    const {newsData, setNewsData} = useContext(NewsData)
+    const {newsData} = useContext(NewsData)
 
   return (
     <>
